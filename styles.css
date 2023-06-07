@@ -55,24 +55,36 @@ input:focus{
     color: black;
 }
 section{
-    background-color: green;
+    /* background-color: green; */
     margin: auto;
     width: 800px;
     display: flex;
     flex-direction: column;
+    max-width: 20%;
 }
-section > *{
-    border:3px solid #2b2b2d;
+section > *:not(:first-child){
+    border:2px solid #2b2b2d;
     background-color: aliceblue;
     border-radius: 5px;
     margin: 10px 0;
     text-align: center;
+    color: #4d4d51;
+    padding: 5px;
 }
 .change-color-tool{
     padding: 10px;
     margin: 10px 0;
     text-transform: capitalize;
+    border: none;
+    color: aliceblue;
+    background-color: #2b2b2d;
+    border-radius: 20px;
 }
+.change-color-tool:hover{
+    background-color: #f18a23;
+    color: #2b2b2d;
+}
+
 /* 
 .change-color-tool{
     text-align: center;
