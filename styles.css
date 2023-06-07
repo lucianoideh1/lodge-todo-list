@@ -36,7 +36,7 @@ input:focus{
     border: none;
     outline: none;
 }
-button{
+.add-btn{
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -50,7 +50,7 @@ button{
     text-align: center;
     border-radius: 50%;
 }
-button:hover{
+.add-btn:hover{
     background-color: #f18a23;
     color: black;
 }
@@ -67,6 +67,11 @@ section > *{
     border-radius: 5px;
     margin: 10px 0;
     text-align: center;
+}
+.change-color-tool{
+    padding: 10px;
+    margin: 10px 0;
+    text-transform: capitalize;
 }
 /* 
 .change-color-tool{
@@ -99,7 +104,7 @@ section > *{
         border: none;
         outline: none;
     }
-    button{
+    .add-btn{
         width: 30px;
         height: 30px;
         padding: 5px;
@@ -119,7 +124,7 @@ section > *{
         text-align: center;
         align-self: auto;
     }
-    button:active{
+    .add-btn:active{
         background-color: #f18a23;
         color: black;
     }

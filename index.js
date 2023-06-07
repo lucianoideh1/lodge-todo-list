@@ -3,18 +3,12 @@ let tituloYow = document.querySelector(".title");
 let inputYow = document.querySelector(".input-text");
 let addBtnYow = document.querySelector(".add-btn");
 
+let changeColorBtn = document.querySelector(".change-color-tool");
+
 inputYow.addEventListener("click",()=>console.log("you are clicking the input"))
 addBtnYow.addEventListener("click",()=>console.log("you are clicking the button"))
 
-//1. need to add a event listener on the input
 
-//2. need to take that value into a variable
-
-//3. need to check IF the value is equal to something
-
-//4. if the case is true, allow the user to use the button
-
-//5. or just do it all in one event listener
 addBtnYow.addEventListener("click",function(){
     var paragraph = document.createElement("p");
     paragraph.innerText = inputYow.value;
@@ -51,3 +45,12 @@ inputYow.addEventListener("keydown",function(e){
     })
 })
 
+//set a group of colors:
+
+let colorArr= ["#e29e6d","#b09859","#2ea41b","#fb6310","#d9d417","#048c8f","#3d1295","#3679f2","#240b8e","#a49040","#a49040","#59c378","#5d3248","#7d5d48","#39667b ","#15262e","#8a9397"]
+
+//event listener on the change color tool to aply changes on the body
+changeColorBtn.addEventListener("click",function(){
+    let aleatorio = Math.floor(Math.random() * colorArr.length);
+    document.body.style.backgroundColor = colorArr[aleatorio];
+})
